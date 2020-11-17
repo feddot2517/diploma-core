@@ -6,6 +6,7 @@ import { HtmlHeader } from './html/HtmlHeader';
 import { Router } from './react/Router';
 import { Component } from './react/Component';
 import { Route } from './react/Route';
+import { RenderHtmlHeader } from './html/RenderHtml';
 
 export const mods = [
     {name: 'Value', patch: Value},
@@ -15,5 +16,6 @@ export const mods = [
     {name: 'HtmlHeader', patch: HtmlHeader},
     {name: 'Router', patch: Router},
     {name: 'Component', patch: Component},
-    {name: 'Route', patch: Route}
+    {name: 'Route', patch: Route},
+    {name: 'RenderHtml', patch: RenderHtmlHeader}
 ]

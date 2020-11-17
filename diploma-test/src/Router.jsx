@@ -4,13 +4,13 @@
                 import { Route } from 'react-router-dom';
                 
                 import { Default } from './components/Default'
-import { Kolya } from './components/Kolya'
+import { Qwe } from './components/Qwe'
                 
                 export const Router = () => {
                     return (
                         <BrowserRouter>
-                        <Route exact path='/kolya' component={Kolya}/>
-<Route exact path='/kolya' component={Kolya}/>
+                        <Route exact path='/q' component={Qwe}/>
+<Route exact path='/q' component={Qwe}/>
                         </BrowserRouter>
                     )
                 }

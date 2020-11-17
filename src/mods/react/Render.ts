@@ -15,7 +15,7 @@ export class Render extends Patch {
     }
 
     onUpdate(e: any) {
-        this.props.router();
+        this.props.router && this.props.router();
     }
 
 }
