@@ -4,22 +4,17 @@ import { cors } from './utils/cors';
 import { routesSetup } from './routes/routes-setup';
 
 const bodyParser = require('body-parser');
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3030;
 const DB = process.env.DB || 'sample_template';
 const app: express.Application = express();
 
+app.use(express.static('public'));
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors);
 
 async function main() {
     try {
-        await mongoose.connect(`mongodb://localhost/${DB}`, {
-            useNewUrlParser: true,
-
-            useFindAndModify: false,
-            useUnifiedTopology: true,
-        });
 
         routesSetup(app);
 

@@ -1,6 +1,6 @@
 import express = require('express');
-import { helloWorldRoute } from './hello-world';
+import { makeBuild } from './makeBuild';
 
 export function routesSetup(app: express.Application) {
-    helloWorldRoute(app);
+    makeBuild(app);
 }
